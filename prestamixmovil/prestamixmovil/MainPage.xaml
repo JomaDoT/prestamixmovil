@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:prestamixmovil"
              x:Class="prestamixmovil.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout VerticalOptions="Center" Margin="25">
+        <Label Text="Login" HorizontalOptions="CenterAndExpand"/>
+        <Entry x:Name="usuarioentry" Placeholder="Usuario"/>
+        <Entry x:Name="passwordentry" Placeholder="Contraseña"/>
+        <Button Text="Entrar" Clicked="Button_Clicked"/>
+        <Label x:Name="resultadologin" HorizontalOptions="Center"/>
+
     </StackLayout>
 
 </ContentPage>
